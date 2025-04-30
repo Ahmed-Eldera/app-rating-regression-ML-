@@ -1,0 +1,27 @@
+Linear models:
+
+1- LinearRegression()
+
+2- Ridge()
+
+3- LassoCV()
+
+
+
+Tree-based ensembles
+
+1- DecisionTreeRegressor()
+
+2- RandomForestRegressor()
+
+3- GradientBoostingRegressor()
+
+
+
+
+Other non-linear regressors
+
+1- SVR() (Support Vector Regression)
+
+
+
