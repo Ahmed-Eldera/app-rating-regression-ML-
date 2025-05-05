@@ -130,6 +130,12 @@ def clean_data(input_file, output_file, is_training=True):
     if is_training:
         # For training data, drop rows with missing Rating values
         df = df.dropna(subset=['Rating'])
+
+    #----------Normalization
+    df['NumInstalls'] = np.log1p(df['NumInstalls'])
+    df['NumReviews'] = np.log1p(df['NumReviews']) 
+
+
     
     # Handle any other missing values with appropriate imputation
     numeric_columns = df.select_dtypes(include=['int64', 'float64']).columns
